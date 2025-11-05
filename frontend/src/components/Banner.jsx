@@ -1,15 +1,15 @@
 import React from 'react'
-import banner from '../../public/Banner.png'
+import banner from '../../public/banner_1.png'
 
 const Banner = () => {
   return (
     <>
-    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10'>
+    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 dark:bg-slate-900 dark:text-white'>
         <div className='w-full md:w-1/2 order-2 md:order-1 mt-12 md:mt-32'>
             <div className='space-y-12'>
                 <h1 className='text-4xl font-bold'>
                     Hello, welcomes here to learn something {" "}
-                    <span className='text-pink-500'>new everyday!!!</span>
+                    <span className='text-teal-400'>new everyday!!!</span>
                 </h1>
                 <p className='text-xl'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda amet eaque, adipisci perspiciatis commodi eligendi ea molestiae architecto.
@@ -28,10 +28,10 @@ const Banner = () => {
                     <input type="text" className="grow" placeholder="Email" />
                 </label>
             </div>
-            <button className="btn mt-8 btn-secondary">Get Started</button>
+            <button className="btn mt-8 btn-outline-info">Get Started</button>
         </div>
         <div className='order-1 w-full md:w-1/2'>
-            <img src={banner} className='w-92 h-92' alt="banner-image" />
+            <img src={banner} className='w-92 h-92 mt-20' alt="banner-image" />
         </div>
     </div>
     </>
